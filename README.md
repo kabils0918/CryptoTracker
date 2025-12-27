@@ -96,6 +96,7 @@ This makes the code:
 | `matplotlib`        | Plotting and visualization        |
 
 ## 📂 Project Structure
+```text
 CryptoTracker/
 │
 ├── README.md
@@ -103,15 +104,14 @@ CryptoTracker/
 ├── .gitignore
 │
 ├── src/
-│ ├── tracker_selenium.py # Selenium scraper
-│ └── plot_from_selenium_csv_debug.py # Plot generator
+│   ├── tracker_selenium.py              # Selenium scraper
+│   └── plot_from_selenium_csv_debug.py  # Plot generator
 │
 └── outputs/
-├── crypto_prices.csv # Generated after scraping
-├── top10_prices.png # Price plot
-└── price_changes_24h.png # 24h change plot
-undefined
-
+    ├── crypto_prices.csv                # Generated after scraping
+    ├── top10_prices.png                 # Price plot
+    └── price_changes_24h.png            # 24h change plot
+```
 ## ⚙️ Installation & Setup
 
 ### 1️⃣ Clone the repository
@@ -178,6 +178,7 @@ Some ideas you can build on top of this project:
 - Create a Streamlit dashboard for interactive visualization  
 - Add alert logic (e.g., notify when price change exceeds a threshold)  
 - Log errors and scraping status for production‑
+
 
 
 
