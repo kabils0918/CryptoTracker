@@ -95,3 +95,93 @@ This makes the code:
 | `pandas`            | Data cleaning & CSV operations    |
 | `matplotlib`        | Plotting and visualization        |
 
+## 📂 Project Structure
+CryptoTracker/
+│
+├── README.md
+├── requirements.txt
+├── .gitignore
+│
+├── src/
+│ ├── tracker_selenium.py # Selenium scraper
+│ └── plot_from_selenium_csv_debug.py # Plot generator
+│
+└── outputs/
+├── crypto_prices.csv # Generated after scraping
+├── top10_prices.png # Price plot
+└── price_changes_24h.png # 24h change plot
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the repository
+git clone https://github.com/kabils0918/CryptoTracker.git
+cd CryptoTracker
+
+### 2️⃣ Create and activate a virtual environment (recommended)
+python -m venv venv
+
+**On Windows (PowerShell):**
+.\venv\Scripts\Activate.ps1
+
+**On macOS / Linux:**
+source venv/bin/activat
+
+### 3️⃣ Install dependencies
+pip install -r requirements.txt
+
+---
+
+## ▶️ Run the Live Selenium Scraper
+python src/tracker_selenium.py
+
+What this does:
+
+- Launches Chrome (visible or headless based on configuration)  
+- Loads CoinMarketCap and scrapes the Top 10 coins  
+- Prints a formatted table of data in the terminal  
+- Saves/updates `outputs/crypto_prices.csv` with the latest snapshot
+
+---
+
+## 🎨 Generate the Plots
+
+After you have run the scraper at least once (so that `crypto_prices.csv` exists):
+python src/plot_from_selenium_csv_debug.py
+
+This will generate/update:
+
+- `outputs/top10_prices.png`  
+- `outputs/price_changes_24h.png`
+
+You can embed these images directly in your mini‑project report or PPT.
+
+---
+
+## 📊 Sample Outputs
+
+- **Top 10 Crypto Prices (Live):**  
+  Horizontal bar chart showing each coin’s current price in USD.
+
+- **24h Price Changes:**  
+  Horizontal bar chart showing 24‑hour percentage change for the same coins (ideal for volatility analysis).
+
+---
+
+## 🚧 Possible Enhancements
+
+Some ideas you can build on top of this project:
+
+- Add a scheduler to run scraping automatically every X minutes/hour  
+- Build a FastAPI or Flask backend and expose the data as an API  
+- Store data in SQLite/PostgreSQL for long‑term analysis  
+- Create a Streamlit dashboard for interactive visualization  
+- Add alert logic (e.g., notify when price change exceeds a threshold)  
+- Log errors and scraping status for production‑
+
+
+
+
+
+
