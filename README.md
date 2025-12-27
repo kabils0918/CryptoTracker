@@ -96,7 +96,6 @@ This makes the code:
 | `matplotlib`        | Plotting and visualization        |
 
 ## 📂 Project Structure
-'''
 CryptoTracker/
 │
 ├── README.md
@@ -111,8 +110,7 @@ CryptoTracker/
 ├── crypto_prices.csv # Generated after scraping
 ├── top10_prices.png # Price plot
 └── price_changes_24h.png # 24h change plot
-'''
----
+undefined
 
 ## ⚙️ Installation & Setup
 
@@ -180,6 +178,7 @@ Some ideas you can build on top of this project:
 - Create a Streamlit dashboard for interactive visualization  
 - Add alert logic (e.g., notify when price change exceeds a threshold)  
 - Log errors and scraping status for production‑
+
 
 
 
