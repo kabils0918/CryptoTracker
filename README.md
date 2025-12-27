@@ -95,7 +95,3 @@ This makes the code:
 | `pandas`            | Data cleaning & CSV operations    |
 | `matplotlib`        | Plotting and visualization        |
 
----
-
-## 📂 Project Structure
-
